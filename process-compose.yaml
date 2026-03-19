@@ -1,0 +1,11 @@
+version: "0.5"
+
+processes:
+  postgres:
+    command: |
+      mkdir -p "$(pwd)/data/postgres/locks"
+      postgres -D ./data/postgres -k "$(pwd)/data/postgres/locks"
+  nats:
+    command: nats-server
+  etcd:
+    command: etcd
