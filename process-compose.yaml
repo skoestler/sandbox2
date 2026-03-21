@@ -6,6 +6,6 @@ processes:
       mkdir -p "$(pwd)/data/postgres/locks"
       postgres -D ./data/postgres -k "$(pwd)/data/postgres/locks"
   nats:
-    command: nats-server
+    command: nats-server -m 8222
   etcd:
     command: etcd

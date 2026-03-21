@@ -13,6 +13,7 @@
               pkgs.bun
               pkgs.etcd
               pkgs.nats-server
+              pkgs.natscli
               pkgs.postgresql
               pkgs.process-compose
               pkgs.httpie
