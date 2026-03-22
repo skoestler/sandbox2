@@ -2,7 +2,7 @@ import * as Rx from "rxjs";
 import { publish, subscribe } from "./broker.ts";
 
 setTimeout(() => {
-    publish("test", "Hello, world!");
+  publish("test", "Hello, world!");
 }, 3000);
 
 const [messageObservable, _unsub] = subscribe("test");
